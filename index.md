@@ -1,40 +1,14 @@
-## Welcome to GitHub Pages
+# Introduction
 
-You can use the [editor on GitHub](https://github.com/jamesjose25/jamesjose25.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+This book will guide you through setting up a localbuild of IIBv10 or ACEv11 starting from scratch. These instructions have been written based on my knowledge of the IIB/ACE build system and should be valid for any version of IIB v10 or ACE v11 on any of the supported platforms, however they have only been tested on macOS, Linux x64, Linux s390x, Linux ppcle, and Windows.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This guide is solely focused on getting a local IIB/ACE _server_ build. Specifically the following topics are outside the scope of this document:
 
-### Markdown
+1. The toolkit
+1. The test material
+1. All Node.js modules
+1. Historical ODE build types, such as backing builds and delta builds
+1. Any form of packager build (ibXXX, FixPackager or the z/OS USERMOD packager builds)
+1. z/CX
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Message Flow Node issues
-# Deployment Issue
-# Performance Issue
-# Memory leak issues
-# Java Issues
-# httpListener issues
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jamesjose25/jamesjose25.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+When you're ready, head on over to [Getting setup](./setup/index.md) to begin!
