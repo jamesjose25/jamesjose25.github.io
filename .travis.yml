@@ -1,0 +1,28 @@
+language: rust
+sudo: false
+os: linux
+
+cache:
+  - cargo
+
+rust:
+  - stable
+
+before_script:
+  - (test -x $HOME/.cargo/bin/mdbook || cargo install --no-default-features --vers "^0.3" mdbook)
+
+script:
+  - mdbook build
+
+deploy:
+  provider: pages
+  strategy: git
+  edge: true
+  cleanup: false
+  github-token: $GITHUB_TOKEN
+  local-dir: docs # In case of custom book path: path/to/mybook/book
+  keep-history: true
+  on:
+    branch: master
+  target_branch: gh-pages
+  github_url: github.ibm.com
